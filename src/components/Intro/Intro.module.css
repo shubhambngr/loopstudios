@@ -1,0 +1,103 @@
+.Intro {
+  height: 750px;
+  padding: 0 10%;
+  position: relative;
+}
+
+.Intro img {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 100px;
+  left: 10%;
+}
+
+.Intro_text {
+  background-color: white;
+  width: 40%;
+  padding: 100px;
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+}
+
+.Intro_text h1 {
+  font-size: 3rem;
+}
+
+.Intro_text p {
+  font-size: 18px;
+}
+
+@media (max-width: 1250px) {
+  .Intro {
+    margin-bottom: 25%;
+  }
+
+  .Intro img {
+    position: relative;
+    left: 0;
+    right: 0;
+  }
+
+  .Intro_text {
+    position: relative;
+    bottom: 0;
+    left: 30%;
+    width: 80%;
+    height: 200px;
+  }
+}
+
+@media (max-width: 800px) {
+  .Intro {
+    height: 100%;
+    margin-bottom: 15%;
+  }
+
+  .Intro img {
+    margin-top: 50px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .Intro_text {
+    left: 0;
+    right: 0;
+    width: 90%;
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+  .Intro_text h1 {
+    font-size: 2rem;
+  }
+
+  .Intro_text p {
+    font-size: initial;
+  }
+}
+
+@media (max-width: 450px) {
+  .Intro {
+    width: 100%;
+    margin-bottom: 40%;
+  }
+
+  .Intro img {
+    height: 250px;
+    margin-bottom: 20px;
+  }
+
+  .Intro_text {
+    margin-top: auto;
+  }
+
+  .Intro_text h1 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+  }
+}

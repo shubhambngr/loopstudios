@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+// import "./App.css";
+import { Component } from "react";
+import Header from "./components/Header/Header";
+import Modal from "./components/UI/Modal/Modal";
+import Intro from "./components/Intro/Intro";
+import Creations from "./components/Creations/Creations";
+import Footer from "./components/Footer/Footer";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = { menuOpen: false };
+
+  toggleMenuHandler = () => {
+    this.setState((prevState) => ({ menuOpen: !prevState.menuOpen }));
+  };
+
+  render() {
+    return (
+      <>
+        <Modal
+          show={this.state.menuOpen}
+          backdropClicked={this.toggleMenuHandler}
+        />
+        <Header
+          navbarMenuClick={this.toggleMenuHandler}
+          menuOpen={this.state.menuOpen}
+        />
+        <Intro />
+        <Creations />
+        <Footer />
+      </>
+    );
+  }
 }
 
 export default App;

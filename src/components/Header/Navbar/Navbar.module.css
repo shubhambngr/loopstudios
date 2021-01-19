@@ -1,0 +1,50 @@
+.Navbar {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5% 0 2%;
+  height: 100px;
+  position: relative;
+  z-index: 200;
+}
+
+.Navbar_Link {
+  display: inline-block;
+  position: relative;
+  font-family: "Alata", sans-serif;
+  font-size: 18px;
+  margin: 0 15px 5px;
+}
+
+.Navbar_Link:last-child {
+  margin-right: 0;
+}
+
+.Navbar_Link a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.Menu {
+  visibility: hidden;
+  position: absolute;
+}
+
+@media (max-width: 900px) {
+  .Navbar_Links {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .Menu {
+    visibility: visible;
+    position: relative;
+  }
+}
+
+@media (max-width: 300px) {
+  img {
+    transform: scale(0.8);
+  }
+}

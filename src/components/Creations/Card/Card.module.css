@@ -1,0 +1,62 @@
+.Card {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 3%;
+  height: 500px;
+  position: relative;
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.3s ease;
+}
+
+.Card:hover {
+  cursor: pointer;
+}
+
+.Card:hover h1 {
+  color: black;
+}
+
+.Card:hover .grey_bg {
+  opacity: 0.8;
+}
+
+.Card h1 {
+  color: white;
+  font-size: 2.25rem;
+  padding: 0 20px;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+}
+
+.grey_bg {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #ccc;
+  opacity: 0;
+}
+
+@media (max-width: 940px) {
+  .Card {
+    display: block;
+    width: 100%;
+    height: 240px;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 500px) {
+  .Card {
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
+  .Card h1 {
+    font-size: 1.75rem;
+  }
+}

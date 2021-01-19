@@ -1,0 +1,68 @@
+body {
+  padding: 0;
+}
+
+.Header {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../../assets/images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-sizing: border-box;
+  height: 98vh;
+  width: 100%;
+  padding: 0 10%;
+  color: white;
+}
+
+.Headline {
+  border: 2px solid white;
+  width: fit-content;
+  margin: 12% auto 10% 0;
+  padding: 2% 15% 2% 2%;
+}
+
+.Headline h1 {
+  font-size: 3.5rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .Headline {
+    margin-top: 20%;
+  }
+}
+
+@media (max-width: 500px) {
+  .Header {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../../assets/images/mobile/image-hero.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .Headline {
+    margin-top: 50%;
+    margin-left: -5%;
+    padding: 4% 15% 4% 3%;
+  }
+
+  .Headline h1 {
+    line-height: 1.25;
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-height: 1000px) and (min-width: 700px) {
+  .Headline {
+    margin-top: 50%;
+  }
+}

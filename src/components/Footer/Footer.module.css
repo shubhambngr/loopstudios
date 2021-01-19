@@ -1,0 +1,142 @@
+.Footer {
+  height: 200px;
+  width: 100%;
+  padding: 0 10%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Logo_Nav_Section,
+.Social_Section {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 5% 0 0;
+}
+
+.Logo_Nav_Section img {
+  width: 12rem;
+}
+
+.Navbar_Links {
+  margin-top: 5%;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.Navbar_Link {
+  display: inline-block;
+  position: relative;
+  font-family: "Alata", sans-serif;
+  font-size: 18px;
+  margin: 0 15px 5px;
+}
+
+.Navbar_Link:first-child {
+  margin-left: 0;
+}
+
+.Navbar_Link:last-child {
+  margin-right: 0;
+}
+
+.Navbar_Link a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.Social_Section {
+  align-items: flex-end;
+}
+
+.Social_Section p {
+  color: hsl(0, 0%, 41%);
+}
+
+.Icons_List {
+  width: 15rem;
+  text-align: right;
+}
+
+.Icons_List li {
+  display: inline;
+  margin: 0 5%;
+}
+
+.Icons_List li a img:hover {
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+}
+
+.Icons_List:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 940px) {
+  .Footer {
+    height: 100%;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .Logo_Nav_Section,
+  .Social_Section {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .Logo_Nav_Section img {
+    margin-bottom: 5%;
+  }
+
+  .Navbar_Links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .Navbar_Link {
+    font-size: 1.25rem;
+    margin: 3%;
+  }
+
+  .Social_Section {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .Logo_Nav_Section img {
+    margin: 5% 0;
+    display: block;
+  }
+
+  .Navbar_Links {
+    flex-flow: column wrap;
+    width: auto;
+    margin: 2% 0;
+    padding-left: 0;
+  }
+
+  .Social_Section {
+    margin: 2% 0;
+  }
+
+  .Icons_List {
+    width: 75%;
+    text-align: center;
+    margin-top: 7%;
+  }
+
+  .Social_Section p {
+    margin-top: 2%;
+  }
+}
