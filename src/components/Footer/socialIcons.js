@@ -6,15 +6,15 @@ import instagramIcon from "../../assets/icons/icon-instagram.svg";
 const icons = [
   {
     icon: fbIcon,
-    href: "https://www.facebook.com/shubhambngr",
+    href: "#",
   },
   {
     icon: twitterIcon,
-    href: "https://www.twitter.com/shubhambngr",
+    href: "#",
   },
   {
     icon: instagramIcon,
-    href: "https://www.instagram.com/shubhambngr",
+    href: "#",
   },
   {
     icon: pinterestIcon,
